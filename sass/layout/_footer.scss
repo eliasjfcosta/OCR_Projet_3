@@ -1,0 +1,30 @@
+footer{
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+    padding: 20px 15px 30px 25px;
+    h4{
+        color: white;
+        font-family: $font-title;
+        font-size:larger;
+        padding-bottom: 15px;
+    }
+    & li{
+        padding: 5px 0 5px 0;
+        & a{
+            color: white;
+            & i{
+                padding-right: 10px;
+            }
+            &:hover{
+                color:$primary;
+            }
+            &:active{
+                color: $secondary;
+            }
+        }
+        & .partner i{
+            font-size: small;
+            padding-right: 8px;
+        }
+    }
+}

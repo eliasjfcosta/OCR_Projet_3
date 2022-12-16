@@ -1,0 +1,211 @@
+main{
+    width: 100%;
+}
+
+
+/* Background */
+
+.background-pg{
+    background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    @include background;
+}
+
+.background-ne{
+    background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    @include background;
+}
+
+.background-af{
+    background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    @include background;
+}
+
+.background-ds{
+    background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    @include background;
+}
+
+
+/* Menu part */
+
+.menu{
+    margin-top: -55px;
+    width: 100%;
+    height: 1100px;
+    background-color: darken($color: #ffffff, $amount: 4);
+    border-radius: 30px 30px 0 0;
+    padding: 20px 20px 70px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    & h1{
+        width: 80%;
+        font-family: "shrikhand";
+        font-size: x-large;
+    }
+
+    @include tablet-landscape{
+        height: 550px;
+    }
+}
+.menu-ne{
+    height: 1170px;
+    @include tablet-landscape{
+        height: 620px;
+    }
+}
+
+
+/* Starter */
+
+    .starter{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        & h2{
+            width: 100%;
+        }
+
+        @include tablet-landscape{
+            width: 31%;
+        }
+    }
+    .starter-ne{
+        height: 330px;
+    }
+
+    .border{
+        border-top: solid;
+        border-top-color: $tertiary;
+        width: 40px;
+        position: relative;
+        bottom: 3px;
+    }
+
+
+/* Cards */
+
+        .menu-card{
+            background-color: #ffffff;
+            width: 100%;
+            height: 65px;
+            font-size: medium;
+            border: none;
+            text-align: left;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 2px 3px 5px darken($color: #ffffff, $amount: 10);
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            opacity: 0;
+
+            & .plate{
+                width: 100%;
+                height: 55px;
+                margin: 10px 10px 10px 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                & h3{
+                    width: 100%;
+                    font-weight: 700;
+                    color: #000000;
+                }
+
+                & .details{
+                    width: 85%;
+                    height: 25px;
+                    color: lighten($color: #000000, $amount: 40);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                & .price{
+                    width: 10%;
+                    color: #000000;
+                    font-weight: 700;
+                }
+            }
+            & .checkbox{
+                height: 100%;
+                width: 0%;
+                border-radius: 0 20px 20px 0;
+                background-color: $tertiary;
+                text-align: center;
+                line-height: 65px;
+                font-size:x-large;
+                color: #ffffff;
+            }
+            
+            &:hover{
+                & > .plate{
+                    width: 80%;
+                    transition: width 0.6s;
+                }
+                & > .checkbox{
+                    width: 15%;
+                    transition: width 0.6s;
+                    transition-delay: 0.1s;
+                    & > i{
+                    animation: check 0.6s;
+                    }
+                }
+            }
+        }
+
+        .menu-1{
+            animation: apparition 1s forwards;
+        }
+        .menu-2{
+            animation: apparition 1s 0.25s forwards;
+        }
+        .menu-3{
+            animation: apparition 1s 0.5s forwards;
+        }
+        .menu-4{
+            animation: apparition 1s 0.75s forwards;
+        }
+
+        @keyframes apparition {
+            from{opacity: 0;transform: translateY(20%);}
+            to{opacity: 1;transform: translateY(0%);}
+        }
+
+        @keyframes check {
+            0%{transform: rotate(-360deg);}
+            50%{transform: rotate(-180deg);}
+            100%{transform: rotate(0deg);}
+        }
+
+
+        
+/* Dish, desserts and command button */
+
+    .dish{
+        @extend .starter;
+    }
+
+    .dessert{
+        @extend .starter;
+    }
+
+.button{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    & .btn{
+        width: 200px;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+}
