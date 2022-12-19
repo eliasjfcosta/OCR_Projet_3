@@ -1,10 +1,37 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -13,7 +40,9 @@ ul {
   list-style: none;
 }
 
-button, input, select {
+button,
+input,
+select {
   margin: 0;
 }
 
@@ -21,11 +50,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-img, video {
+img,
+video {
   height: auto;
   max-width: 100%;
 }
@@ -39,7 +71,8 @@ table {
   border-spacing: 0;
 }
 
-td, th {
+td,
+th {
   padding: 0;
 }
 
@@ -48,7 +81,7 @@ td, th {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -66,12 +99,12 @@ button {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   padding: 0;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   cursor: pointer;
 }
 
 .btn {
-  background: linear-gradient(to top left, #9356DC, 55%, #FF79DA);
+  background: linear-gradient(to top left, #9356dc, 55%, #ff79da);
   color: white;
   padding: 15px 20px 15px 20px;
   border-radius: 30px 30px 30px 30px;
@@ -91,7 +124,7 @@ button {
   line-height: 30px;
   text-align: center;
   color: #2a947a;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 2px;
   position: relative;
   bottom: 220px;
@@ -181,7 +214,7 @@ button {
 @keyframes like {
   from {
     transform: scale(1.01);
-    background: -webkit-linear-gradient(top, #9356DC, #FF79DA);
+    background: -webkit-linear-gradient(top, #9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -190,7 +223,7 @@ button {
   }
   to {
     transform: scale(1.01);
-    background: -webkit-linear-gradient(top, #9356DC, #FF79DA);
+    background: -webkit-linear-gradient(top, #9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -210,7 +243,7 @@ button {
   height: 50px;
   width: 50px;
   border: 10px solid transparent;
-  border-top-color: #9356DC;
+  border-top-color: #9356dc;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -221,7 +254,7 @@ button {
   height: 50px;
   width: 50px;
   border: 10px solid transparent;
-  border-right-color: #FF79DA;
+  border-right-color: #ff79da;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -232,7 +265,7 @@ button {
   height: 50px;
   width: 50px;
   border: 10px solid transparent;
-  border-bottom-color: #9356DC;
+  border-bottom-color: #9356dc;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -243,7 +276,7 @@ button {
   height: 50px;
   width: 50px;
   border: 10px solid transparent;
-  border-left-color: #99E2D0;
+  border-left-color: #99e2d0;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -377,7 +410,7 @@ footer {
 }
 footer h4 {
   color: white;
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   font-size: larger;
   padding-bottom: 15px;
 }
@@ -391,10 +424,10 @@ footer li a i {
   padding-right: 10px;
 }
 footer li a:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 footer li a:active {
-  color: #FF79DA;
+  color: #ff79da;
 }
 footer li .partner i {
   font-size: small;
@@ -497,7 +530,7 @@ main {
 }
 .menu h1 {
   width: 80%;
-  font-family: "shrikhand";
+  font-family: 'shrikhand';
   font-size: x-large;
 }
 @media screen and (min-width: 1024px) {
@@ -516,7 +549,9 @@ main {
 }
 
 /* Starter */
-.starter, .dessert, .dish {
+.starter,
+.dessert,
+.dish {
   width: 100%;
   height: 250px;
   display: flex;
@@ -524,11 +559,15 @@ main {
   justify-content: space-between;
   align-content: space-between;
 }
-.starter h2, .dessert h2, .dish h2 {
+.starter h2,
+.dessert h2,
+.dish h2 {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .starter, .dessert, .dish {
+  .starter,
+  .dessert,
+  .dish {
     width: 31%;
   }
 }
@@ -539,7 +578,7 @@ main {
 
 .border {
   border-top: solid;
-  border-top-color: #99E2D0;
+  border-top-color: #99e2d0;
   width: 40px;
   position: relative;
   bottom: 3px;
@@ -590,7 +629,7 @@ main {
   height: 100%;
   width: 0%;
   border-radius: 0 20px 20px 0;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   text-align: center;
   line-height: 65px;
   font-size: x-large;
@@ -685,24 +724,24 @@ main {
   color: #4d4d4d;
 }
 .search form .icon-map a:hover > i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .search form .icon-map a:active > i {
-  color: #FF79DA;
+  color: #ff79da;
 }
-.search form input[type=text] {
+.search form input[type='text'] {
   width: 80%;
   height: 100%;
   border: none;
   background-color: #ebebeb;
   font-weight: 600;
   font-size: medium;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   color: #4d4d4d;
   display: flex;
   align-items: center;
 }
-.search form input[type=text]:focus {
+.search form input[type='text']:focus {
   outline: none;
 }
 
@@ -793,12 +832,12 @@ nav p {
   background-color: rgba(147, 86, 220, 0.1);
 }
 .functioning .funct-cards .steps:hover > i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .functioning .funct-cards .number {
   padding: 3px 8px 3px 8px;
   border-radius: 20px 20px 20px 20px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: #ffffff;
   align-self: center;
 }
